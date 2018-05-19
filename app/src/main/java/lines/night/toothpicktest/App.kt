@@ -8,6 +8,7 @@ import toothpick.Toothpick
 import toothpick.configuration.Configuration
 import toothpick.registries.FactoryRegistryLocator
 import toothpick.registries.MemberInjectorRegistryLocator
+import java.util.*
 
 class App : Application() {
 
@@ -40,5 +41,8 @@ class App : Application() {
     private fun initAppScope() {
         val appScope = Toothpick.openScope(DI.APP_SCOPE)
         appScope.installModules(AppModule(this))
+
+        Timber.i("appTree : $appScope")
+
     }
 }

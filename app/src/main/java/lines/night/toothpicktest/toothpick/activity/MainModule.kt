@@ -5,6 +5,6 @@ import toothpick.config.Module
 
 class MainModule : Module() {
     init {
-        bind(Counter::class.java).to(Counter::class.java)
+        bind(Counter::class.java).toInstance(Counter())
     }
 }

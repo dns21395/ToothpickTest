@@ -40,7 +40,7 @@ dependencies {
     // Toothpick
     implementation "com.github.stephanenicolas.toothpick:toothpick-runtime:$toothpick"
     implementation "com.github.stephanenicolas.toothpick:smoothie:$toothpick"
-    annotationProcessor "com.github.stephanenicolas.toothpick:toothpick-compiler:$toothpick"
+    kapt "com.github.stephanenicolas.toothpick:toothpick-compiler:$toothpick"
 
     // Log
     implementation "com.jakewharton.timber:timber:$timber"
