@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import kotlinx.android.synthetic.main.fragment_main.*
 import lines.night.toothpicktest.toothpick.activity.MainScope
 import lines.night.toothpicktest.toothpick.fragment.FragmentScope
-import timber.log.Timber
 import toothpick.Toothpick
 import javax.inject.Inject
 
@@ -31,11 +30,9 @@ class MainFragment : Fragment() {
     }
 
     private fun inject() {
-        Timber.i("tree : ${
-            Toothpick.openScopes(MainScope::class.java, FragmentScope::class.java).apply {
-                Toothpick.inject(this@MainFragment, this)
-            }
-        }")
+        Toothpick.openScopes(MainScope::class.java, FragmentScope::class.java).apply {
+            Toothpick.inject(this@MainFragment, this)
+        }
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? =

@@ -2,7 +2,7 @@ package lines.night.toothpicktest.toothpick.application
 
 import android.content.Context
 import lines.night.toothpicktest.util.SchedulerProviderImpl
-import night.lines.todo.util.SchedulerProvider
+import lines.night.toothpicktest.util.SchedulerProvider
 import toothpick.config.Module
 
 class AppModule(context: Context) : Module() {

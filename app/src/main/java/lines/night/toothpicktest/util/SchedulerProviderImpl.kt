@@ -7,7 +7,6 @@ import io.reactivex.ObservableTransformer
 import io.reactivex.SingleTransformer
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
-import night.lines.todo.util.SchedulerProvider
 
 /**
  * Created by denisgabyshev on 17/03/2018.
