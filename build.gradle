@@ -27,7 +27,6 @@ task clean(type: Delete) {
 }
 
 ext {
-    toothpickVersion = "1.0.6"
     timber = '4.7.0'
     dagger2 = '2.16'
     toothpick = '1.1.3'

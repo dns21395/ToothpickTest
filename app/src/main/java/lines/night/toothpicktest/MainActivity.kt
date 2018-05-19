@@ -6,7 +6,6 @@ import kotlinx.android.synthetic.main.activity_main.*
 import lines.night.toothpicktest.toothpick.DI
 import lines.night.toothpicktest.toothpick.activity.MainModule
 import lines.night.toothpicktest.toothpick.activity.MainScope
-import lines.night.toothpicktest.toothpick.application.AppScope
 import timber.log.Timber
 import toothpick.Toothpick
 import javax.inject.Inject
