@@ -6,10 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.fragment_main.*
+import lines.night.toothpicktest.toothpick.DI
 import lines.night.toothpicktest.toothpick.activity.MainScope
 import lines.night.toothpicktest.toothpick.fragment.FragmentScope
 import timber.log.Timber
 import toothpick.Toothpick
+import java.util.*
 import javax.inject.Inject
 
 class MainFragment : Fragment() {
@@ -36,6 +38,8 @@ class MainFragment : Fragment() {
                 Toothpick.inject(this@MainFragment, this)
             }
         }")
+
+        Timber.i("tree : ${Toothpick.openScope(DI.APP_SCOPE)}")
 
     }
 
